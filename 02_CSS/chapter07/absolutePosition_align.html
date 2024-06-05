@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>margin값을 -로 줘서 가운데 정렬</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: red;
+      }
+      #container {
+        background-color: orange;
+        width: 500px;
+        height: 250px;
+        /* 시작점이 화면의 가운데 위치 */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        /* 요소의 절반 크기만큼 다시 당겨와서 가운데 정렬 */
+        /* margin-left: -250px; */
+        /* calc 함수로도 계산 가능(띄어쓰기 유의) */
+        margin-left: calc(500px / -2);
+        margin-top: -125px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>요소의 중앙 배치</h1>
+    </div>
+  </body>
+</html>

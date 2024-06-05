@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getElementById로 이미지 속성 변경하기</title>
+    <script>
+      window.onload = function () {
+        let image = document.getElementById('image');
+
+        // 속성 변경
+        image.src =
+          'https://i.pinimg.com/originals/01/42/01/0142018c01a843dea752c6fbaf34cff4.jpg';
+        image.width = 300;
+        image.height = 200;
+      };
+    </script>
+  </head>
+  <body>
+    <img id="image" />
+  </body>
+</html>

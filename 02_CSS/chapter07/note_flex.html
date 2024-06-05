@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex 정렬</title>
+    <style>
+      body {
+        width: 500px;
+        margin: 10px auto;
+      }
+      #middle {
+        /* display를 flex로 설정하면 자동으로 수평 정렬된다 */
+        display: flex;
+      }
+      #left {
+        width: 150px;
+        background: red;
+      }
+      #right {
+        width: 350px;
+        background: blue;
+      }
+      #top {
+        background-color: green;
+      }
+      #bottom {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, sed
+      placeat. Officiis veniam, incidunt culpa quasi repellendus provident eum
+      assumenda blanditiis quae consequuntur ullam ipsam, cum nulla? Cum, vero
+      sit?
+    </div>
+    <div id="middle">
+      <div id="left">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      </div>
+      <div id="right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+        molestias quaerat. Sed distinctio eius natus molestiae aliquid minus
+        minima autem optio nobis ea culpa deleniti sequi quis aperiam, animi in!
+      </div>
+    </div>
+    <div id="bottom">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia neque facere
+      natus, nemo blanditiis soluta possimus optio, laborum quaerat iste eum
+      fuga placeat tempore vel amet cupiditate earum eaque omnis?
+    </div>
+  </body>
+</html>

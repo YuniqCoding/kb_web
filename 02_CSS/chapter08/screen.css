@@ -1,0 +1,6 @@
+/* 기본 화면 */
+@media screen {
+  body {
+    background-color: red;
+  }
+}

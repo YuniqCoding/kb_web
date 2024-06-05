@@ -1,0 +1,7 @@
+/* 인쇄될 때의 화면 */
+@media print {
+  /* 선택자는 내부에 따로 지정해줘야 한다 */
+  body {
+    background-color: green;
+  }
+}
